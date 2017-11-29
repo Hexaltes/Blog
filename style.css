@@ -1,118 +1,209 @@
+body{
+    background: #d8d8d8;
+}
 
-
-	body{
-        background: #89ff89;
-	}
-
-	body,input,textarea,select
-	{
-		font-size: 11pt;
-	}
+body,input,textarea,select{
+    font-size: 11pt;
+}
 
 /*HEADER*/
 
 
-	#header
-	{
-		position: relative;
-		padding: 5em 0em;
-		text-align: center;
-        background: black;
-	}
-	
-		.homepage #header
-		{
-			padding: 15em 0em;
-		}
+#header{
+    position: relative;
+    padding: 4em;
+    text-align: center;
+    background-image: url(images/football.jpg);
+    background-size: cover;
+}
 
-.football {
-    opacity: 0.5;
+
+
+h1 {
+    opacity: 2.5;
     filter: alpha(opacity=50);
 }
 
 /*LOGO*/
 
-	#logo
-	{
-		margin-bottom: 3em;
-	}
-	
-		#logo h1
-		{
-			color: #ffffff;
-		}
-	
-		#logo h1 a
-		{
-			display: block;
-			letter-spacing: 1px;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 5em;
-			font-weight: 900;
-			color: #FFF;
-		}
+#logo{
+    margin-bottom: 3em;
+}
 
-		#logo span
-		{
-			display: block;
-			padding-top: 1em;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			font-size: 1.2em;
-			color: rgba(0, 0, 0, 0.5);
-		}			
+#logo h1{
+    color: #ffffff;
+ 
+
+}
+	
+#logo h1 a{
+    display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: bold 900;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-shadow: #000000 5px 1px, rgba(255, 255, 255, 0.37) -5px 1px, rgba(244, 244, 244, 0.46) -5px -1px;
+    opacity: 0.8;
+    font-family: sans-serif
+}
+    
+#logo span{
+    display: block;
+    padding-top: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);
+}			
 			
 /*NAV*/
 
 
-	#nav
-	{
-	}
+#nav{
 
-		#nav > ul > li
-		{
-			display: inline-block;
-		}
-		
-			#nav > ul > li:last-child
-			{
-				padding-right: 0;
-			}
+}
+        
+#nav > ul > li{
+    display: inline-block;
+    
+}
+    
+#nav > ul > li:last-child{
+    padding-right: 0;
+}
+    
+#nav > ul > li > a,
 
-			#nav > ul > li > a,
-			#nav > ul > li > span
-			{
-				display: block;
-				padding: 1em 1.5em;
-				letter-spacing: 1px;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-weight: 200;
-				font-size: 1em;
-				outline: 0;
-				color: rgba(191, 132, 132, 0.7);
-			}
+#nav > ul > li > span{
+    display: block;
+    padding: 1em 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    outline: 0;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(134, 134, 134, 0.68);
+    border-color: black;
+    border-radius: 5px;
+    border: 1px solid;
+    font-family: sans-serif;
+    min-width: 15px;
+    
+}
 
 
-			#nav > ul > li > a:hover
-			{
-				color: #FFF;
-			}
+#nav > ul > li > a:hover{
+    color: #FFF;
+}
 
-			#nav li.active a
-			{
-				background: none;
-				border-radius: 40px;
-				border: 2px solid;
-				border-color: rgba(255,255,255,.8);
-				color: #FFF;
-			}
+#nav li.active a{
+    background: rgba(125, 149, 141, 0.47);
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: black;
+    color: #FFF;
+}
 
-			#nav > ul > li > ul
-			{
-				display: none;
-			}
+/*Main*/
+
+#main{
+    background: aqua;
+    margin-left: 0em;
+    margin-right: 17em;
+}
+
+
+/*Container*/
+.container{
+
+}
+
+/*ARTICLE*/
+
+.row{
+    background: #c4c4c4;
+    position: relative;
+}
+
+#main2{
+    display: inline-block;
+    margin: 3em;
+    padding: 3em 0em 0em 15em;
+}
+
+#homepage {
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+
+.left{
+    justify-content: flex-end;
+    float: left;
+}
+
+.right{
+    justify-content: flex-end;
+    float:right;
+}
+
+/*Sidebar*/
+
+#sidebar {
+    display: inline-block;
+    background: #b2b2b2;
+    float: right;
+    margin-right: -17em;
+}
+
+h2{
+    margin: 1em;
+    
+}
+.mdroite{
+    background: #e6e6e6;
+    list-style: none;
+    width: 15em;
+    display: inline-block;
+    padding: 1em;
+
+}
+    
+
+.mdroite > li{
+    border-top: 1px solid #252525;
+ 
+}
+
+.posted{
+
+    padding: 0em 0em 1em 0em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #6a6a6a;
+}
+
+.posted > img{
+    float:left;
+    margin-right: 20px;
+}
+
+.text{
+    margin-bottom: 1em;
+}
+
+.artic{
+    margin-bottom: 1em;
+    font-size: 12px;
+}
+
+/* X */
 
 
 
